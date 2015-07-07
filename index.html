@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Estudo de Técnicas e Processos referentes ao Desenvolvimento de Jogos Eletrônicos Multiplataforma</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Alisson Alberti Tres">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="debug_coordenadas">X: <span id="click_X"></span> | Y: <span id="click_y"></span></div>
+        <div id="conteudo">
+            <canvas id="jogo" width="640" height="480">Seu navegador não possui suporte ao recurso canvas do HTML5. Sinto muito. =,(</canvas>
+        </div>
+        <script type="text/javascript" src="js/jogo.js"></script>
+    </body>
+    
+    <!--Para utilizar arquivos de áudio em nosso jogo, eles devem ser definidos no DOM da página HTML para serem carregados na página-->
+    <audio id="music_tela_inicial" loop>
+        <source src="recursos/audio/illusionarynight.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="music_tela_jogo" loop>
+        <source src="recursos/audio/dolljudgment.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="music_tela_resultados">
+        <source src="recursos/audio/emotionalskyscraper.mp3" type="audio/mpeg">
+        <br>Desculpa, mas o seu navegador não possui suporte às músicas de fundo do jogo... =,(
+    </audio>
+    <audio id="sfx_hit_jogador">
+        <source src="recursos/audio/hit_jogador.wav" type="audio/wav">
+    </audio>
+    <audio id="sfx_hit_inimigo">
+        <source src="recursos/audio/hit_inimigo.wav" type="audio/wav">
+    </audio>
+    <audio id="sfx_kill_jogador">
+        <source src="recursos/audio/kill_jogador.wav" type="audio/wav">
+    </audio>
+    <audio id="sfx_kill_inimigo">
+        <source src="recursos/audio/kill_inimigo.wav" type="audio/wav">
+        Lamento, mas o seu navegador não possui suporte aos efeitos sonoros do jogo... =,(
+    </audio>
+</html>
